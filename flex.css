@@ -63,13 +63,30 @@
 }
 
 /* Tablet Styles*/
+@media screen and (max-width: 1024px){
+  .third,
+  .quarter {
+    width: calc(97%/2);
+  }
 
+  [class^="box"]:last-child {
+    flex-grow:1;
+  }
 
+  .flex-container {
+    height: fit-content;
+  }
+}
 
 
 /* Mobile Styles*/
+@media screen and (max-width: 520px){
+  [class^="box"]{
+    width: 97%;
+  }
+}
 
 
-
-
-
+/* ALWAYS USE PERCENTAGES */
+/* flex grow makes things so much easier */
+/* tablet 1024 phone 520 */
